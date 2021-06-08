@@ -1,3 +1,9 @@
-<div>
-hello
+<div class="top-header">
+<%=render "shared/header"%>
+</div>
+<div class= "main">
+<%=render partial: "shared/main_content", local:{room: @rooms}%>
+</div>
+<div class= "footer">
+<%=render  "shared/footer"%>
 </div>

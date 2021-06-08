@@ -1,0 +1,16 @@
+<div class= "whole-new-page">
+ <%= form_with model:@rooms, local: true do |f|%>
+  <div class="form">
+    <div class="form-title">
+    <%=f.label :title, "タイトル", class: "f-title"%>
+    <%=f.text_field :title, class: "f-field"%>
+    </div>
+    <div class="form-text">
+    <%=f.label :description, "説明", class:"f-text"%>
+    <%=f.text_area :description, class: "f-area"%>
+    </div>
+    <div class="btn">
+    <%=f.submit "送信", class: "submit-btn"%>
+  </div>
+  <% end %>
+</div>
