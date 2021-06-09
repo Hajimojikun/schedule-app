@@ -1,15 +1,13 @@
 <div class= main>
   <div class= "task-list">
     <% @rooms.reverse_each do |room|%>
-    <ul>
-    <div>
+    <ul class= "ul-list">
     <li>
           <div class="box29">
               <div class="box-title"><%=link_to room.title, room_path(room.id)%></div>
               <p><%=room.description%></p>
           </div>
      </li>
-     </div>
     </ul>
     <% end %>
   </div>
