@@ -1,0 +1,20 @@
+<%= render "shared/header"%>
+<div class="show-wrap">
+<div class="del-btn">
+<%=link_to "ルームを削除する", room_path, method: :delete%>
+</div>
+<div class="show-title">
+<%= @rooms.title%>
+</div>
+
+<ol>
+<li>
+<details>
+<summary>よろしく</summary>
+<p>うまいぜ</p>
+</details>
+</li>
+</ol>
+
+
+</div>
