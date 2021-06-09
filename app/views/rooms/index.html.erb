@@ -1,5 +1,5 @@
 <div class="top-header">
-<%=render "shared/header"%>
+<%=render partial: "shared/header", local:{user: @user}%>
 </div>
 <div class= "main">
 <%=render partial: "shared/main_content", local:{room: @rooms}%>

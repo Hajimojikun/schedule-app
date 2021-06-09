@@ -20,6 +20,9 @@ class RoomsController < ApplicationController
   def show
     @rooms = Room.find(params[:id])
   end
+
+  def destroy
+  end
   
   private
   def rooms_params
